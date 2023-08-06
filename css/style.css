@@ -1,0 +1,246 @@
+
+/* ---- particles.js container ---- */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+#particles-js{
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  background-image: url('');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.image {
+  border-radius: 50% !important;
+  border-color: #212921;
+  border-style: solid;
+
+}
+
+.header1 {
+  color: #212529;
+  font-family: 'Righteous', cursive;
+  font-size: 3vw;
+}
+
+.header2 {
+  color: #212529;
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 1.4vw;
+}
+
+.header3 {
+  color: #212529;
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 2.2vw;
+}
+
+.link1 {
+  color: #212529 !important;
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 2.8vw;
+  color: inherit;
+  margin: 0px 5px 0px 5px;
+  transition: 0.5s;
+}
+
+.link1:hover {
+  color: #fc7a00 !important;
+}
+
+
+
+.card {
+  margin-bottom: 20px;
+}
+
+.center-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* background-color: rgba(0, 0, 0, 0.5); Add background color or customize as needed */
+  z-index: 1; /* Ensure a higher z-index value to overlay other content */
+  
+}
+.btn-1{
+  background-color: #212529;
+  color: white;
+  cursor: pointer;
+  font-size: 2vw;
+  transition: background-color 1s ease;
+}
+.btn-2{
+  background-color: transparent;
+  color: #212529;
+  cursor: pointer;
+  font-size: 2.3vw;
+  transition: background-color 1.5s ease;
+  border: #212529 solid 1px;
+}
+.btn-1:hover {
+  border: #212529 solid 1px;
+  background-color: transparent;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.btn-2:hover {
+  color: white;
+  background-color: #212529;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.card{
+  float: left;
+  opacity: 0.7;
+  border-left: 2px solid white;
+  border-bottom: 2px solid white;
+  border-right: 2px solid green;
+  border-top: 2px solid green;
+  background-color: black;
+  box-shadow: 2px 2px 2px green;
+  color: #fff;
+  /* text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #0fa,
+    0 0 82px #0fa,
+    0 0 92px #0fa,
+    0 0 102px #0fa,
+    0 0 151px #0fa; */
+  margin: 30px;
+  
+  height: 400px;
+}
+/* .card:hover{
+  opacity: 0.5;
+  background-color: #02687e;
+
+} */
+.card img{
+  height:150px;
+  width: 150px;
+  margin: auto;
+}
+.services{
+  display: flex;
+  align-items: center;
+  margin-bottom: 80px;
+  letter-spacing: .2rem
+}
+
+
+@media screen and (max-width: 785px) {
+  .header1 {
+    font-size: 8vw;
+  }
+  .link1 {
+    font-size: 4vw;
+  }
+  
+}
+
+@media screen and (max-width: 765px) {
+  body {
+    text-align: center;
+  }
+  .sidebar ul li {
+    margin-right: 500px;
+  }
+  .header1 {
+    font-size: 7vw;
+  }
+  .header2 {
+    font-size: 3vw;
+  }
+  .header3{
+    font-size: 3.5vw;
+  }
+  .link1 {
+    font-size: 4vw;
+  }
+  
+}
+
+@media screen and (min-width: 1390px) {
+  .header2 {
+    font-size: 1.3vw;
+  }
+  .btn-transparent {
+    font-size: 1.2vw;
+    
+  }
+}
+@media (min-width: 786px) and (max-width: 1389px) {
+  .btn-transparent {
+    font-size: 1.2vw;
+  }
+}
+@media only screen and (max-width:1182px) {
+  .card.last-card{
+    margin-left: 160px;
+  }
+}
+@media only screen and (max-width:990px) {
+  .card.last-card{
+    margin-left: 30px;
+  }
+
+
+}
+@media only screen and (min-width:400px) and (max-width: 766px) {
+  .card.last-card {
+      margin-left: 80px;
+  }
+
+}
+@media only screen and (max-width:766px) {
+  .card{
+  width: auto;
+  margin-left: 80px;
+  }
+
+}
+
+@keyframes button-pulse {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
