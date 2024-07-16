@@ -43,7 +43,7 @@ canvas {
 
 .image {
   border-radius: 50% !important;
-  border-color: #212921;
+  border-color: red;
   border-style: solid;
 
 }
